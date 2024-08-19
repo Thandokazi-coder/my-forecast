@@ -8,33 +8,40 @@
 </head>
 
 <body>
-<header>
-  <form>
-    <input type="search"  placeholder="Enter a city...." required />
-    <input type="submit" value="search" />
-  </form>
-</header>
+  <div class="weather-app">
+    <header>
+      <form>
+        <input type="search" placeholder="Enter a city...." required class="search-form-input" id="search-form-input" />
+        <input type="submit" value="Search" class="search-form-button" id="search-form-button" />
+      </form>
+    </header>
 
-<main>
-    <div>
-  <h1>Paris</h1>
-   <p>
-    Thursday 21:08, clear sky
-    <br />
-    Humidity: 48%, Wind: 4.63km/h
-</p>
-</div>
+    <main>
+      <div class="weather-app-data">
+        <div>
+          <h1 class="weather-app-city">Paris</h1>
+          <p class="weather-app-details">
+            Thursday 21:08, clear sky
+            <br />
+            Humidity: <strong>48%</strong>, Wind: 4.63km/h
+          </p>
+        </div>
+        <div class="weather-app-temperature-container">
+          <div class="weather-app-icon">⛅</div>
+          <div class="weather-app-temperature">12°C</div>
+        </div>
+      </div>
+    </main>
 
-<div>⛅ 12°C </div>
-</main>
- <footer>
-    Coded by
-    <a href="https://github.com/Thandokazi-coder" target="_blank">Thndokazi Payi</a>
-    ,is
-    <a href="https://github.com/Thandokazi-coder/my-forecast" target="_blank">opened-source Github</a>
-    and
-    <a href="https://forecast-shecode-app.netlify.app/" target="_blank">hosted on Netlify</a>
-  </footer>
+    <footer>
+      Coded by
+      <a href="https://github.com/Thandokazi-coder" target="_blank">Thndokazi Payi</a>,
+      is
+      <a href="https://github.com/Thandokazi-coder/my-forecast" target="_blank">open-sourced on GitHub</a>
+      and
+      <a href="https://forecast-shecode-app.netlify.app/" target="_blank">hosted on Netlify</a>
+    </footer>
+  </div>
 </body>
 
 </html>
