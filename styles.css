@@ -21,6 +21,11 @@ header {
   padding-bottom: 30px;
 }
 
+.search-form-container {
+  display: flex;
+  align-items: center;
+}
+
 .search-form-input {
   background-color: #f9f7fe;
   border: none;
