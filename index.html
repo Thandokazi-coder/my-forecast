@@ -3,9 +3,9 @@
 
 <head>
  <meta charset="UTF-8">
- 
+
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+ <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
  <title>Forecast App</title>
  <link rel="stylesheet" href="styles.css">
 </head>
@@ -22,16 +22,16 @@
   <main>
    <div class="weather-app-data">
     <div>
-     <h1 class="weather-app-city" id="city">Paris</h1>
+     <h1 class="weather-app-city" id="city"></h1>
      <p class="weather-app-details">
-      Thursday <strong>21:08</strong>, clear sky
+      <span id="time">Thursday <strong>21:08</strong></span> , <span id="description"></span>
       <br />
-      Humidity: <strong>48%</strong>, Wind: <strong>4.63km/h</strong>
+      Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
      </p>
     </div>
     <div class="weather-app-temperature-container">
      <div class="weather-app-icon">⛅</div>
-     <div class="weather-app-temperature"  id="temperature">12</div>
+     <div class="weather-app-temperature" id="temperature"></div>
      <div class="weather-app-unit">°C</div>
     </div>
    </div>
