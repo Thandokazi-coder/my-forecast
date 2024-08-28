@@ -2,50 +2,116 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
- <title>Forecast App</title>
- <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  <title>Forecast App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
- <div class="weather-app">
-  <header>
-   <form class="search-form-container" id="search-form">
-    <input type="search" placeholder="Enter a city...." required class="search-form-input" id="search-form-input" />
-    <input type="submit" value="Search" class="search-form-button" id="search-form-button" />
-   </form>
-  </header>
+  <div class="weather-app">
+    <header>
+      <form class="search-form-container" id="search-form">
+        <input type="search" placeholder="Enter a city...." required class="search-form-input" id="search-form-input" />
+        <input type="submit" value="Search" class="search-form-button" id="search-form-button" />
+      </form>
+    </header>
 
-  <main>
-   <div class="weather-app-data">
-    <div>
-     <h1 class="weather-app-city" id="city"></h1>
-     <p class="weather-app-details">
-      <span id="time">Thursday <strong>21:08</strong></span> , <span id="description"></span>
-      <br />
-      Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
-     </p>
-    </div>
-    <div class="weather-app-temperature-container">
-     <div id="icon"></div>
-     <div class="weather-app-temperature" id="temperature"></div>
-     <div class="weather-app-unit">°C</div>
-    </div>
-   </div>
-  </main>
+    <main>
+      <div class="weather-app-data">
+        <div>
+          <h1 class="weather-app-city" id="city"></h1>
+          <p class="weather-app-details">
+            <span id="time">Thursday <strong>21:08</strong></span> , <span id="description"></span>
+            <br />
+            Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
+          </p>
+        </div>
+        <div class="weather-app-temperature-container">
+          <div id="icon"></div>
+          <div class="weather-app-temperature" id="temperature"></div>
+          <div class="weather-app-unit">°C</div>
+        </div>
+      </div>
 
-  <footer>
-   Coded by
-   <a href="https://github.com/Thandokazi-coder" target="_blank">Thandokazi Payi</a>,
-   is
-   <a href="https://github.com/Thandokazi-coder/my-forecast" target="_blank">open-sourced on GitHub</a>
-   and
-   <a href="https://forecast-shecode-app.netlify.app/" target="_blank">hosted on Netlify</a>
-  </footer>
- </div>
+      <div class="weather-forecast">
+
+        <!-- Repeat .weather-forecast-item as needed -->
+
+        <div class="weather-forecast-item">
+          <div class="weather-forecast-date">Tues</div>
+          <img class="weather-forecast-icon">⛅</img>
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature">
+              <strong>20°C</strong></span>
+            <span class="weather-forecast-temperature">22°C</span>
+          </div>
+        </div>
+        <!-- space  -->
+
+        <div class="weather-forecast-item">
+          <div class="weather-forecast-date"> Wed</div>
+          <img class="weather-forecast-icon">⛅</img>
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature">
+              <strong>20°C</strong>
+            </span>
+            <span class="weather-forecast-temperature">22°C</span>
+          </div>
+        </div>
+        <!-- space -->
+
+        <div class="weather-forecast-item">
+          <div class="weather-forecast-date">Thurs</div>
+          <img class="weather-forecast-icon">⛅</img>
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature">
+              <strong>20°C</strong>
+            </span>
+            <span class="weather-forecast-temperature">22°C</span>
+          </div>
+        </div>
+        <!-- space -->
+
+        <div class="weather-forecast-item">
+          <div class="weather-forecast-date">Fri</div>
+          <img class="weather-forecast-icon">⛅</img>
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature">
+              <strong>20°C</strong>
+            </span>
+            <span class="weather-forecast-temperature">22°C</span>
+          </div>
+        </div>
+        <!-- space -->
+
+        <div class="weather-forecast-item">
+          <div class="weather-forecast-date">Sat</div>
+          <img class="weather-forecast-icon">⛅</img>
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature">
+              <strong>20°C</strong>
+            </span>
+            <span class="weather-forecast-temperature">22°C</span>
+          </div>
+        </div>
+        <!-- space -->
+
+      </div>
+
+    </main>
+
+    <footer>
+      Coded by
+      <a href="https://github.com/Thandokazi-coder" target="_blank">Thandokazi Payi</a>,
+      is
+      <a href="https://github.com/Thandokazi-coder/my-forecast" target="_blank">open-sourced on GitHub</a>
+      and
+      <a href="https://forecast-shecode-app.netlify.app/" target="_blank">hosted on Netlify</a>
+    </footer>
+  </div>
 </body>
 <script src="index.js"></script>
 
